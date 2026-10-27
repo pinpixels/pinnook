@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pinnook – Local-first notes for any web page</title>
+<meta name="description" content="Pinnook is a Chrome side-panel extension for Markdown notes, tags and projects on the pages you choose. Everything stays on your device.">
+<link rel="icon" href="img/icon48.png"><style>
+:root{--bg:#f7f6f3;--surface:#fff;--ink:#1f2328;--muted:#5f6670;--line:#dedbd3;--accent:#1f7a6b;--soft:#dff0ec;color-scheme:light}
+@media(prefers-color-scheme:dark){:root{--bg:#161a1d;--surface:#1e2327;--ink:#e8eaec;--muted:#a0a8b0;--line:#333b42;--accent:#4cc2ad;--soft:#1d3a35;color-scheme:dark}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--accent)}header.site{display:flex;gap:18px;align-items:center;flex-wrap:wrap;padding:14px max(16px,calc(50% - 400px));border-bottom:1px solid var(--line);background:var(--surface)}
+header.site .brand{display:flex;gap:9px;align-items:center;font-weight:700;color:var(--ink);text-decoration:none}
+header.site nav{display:flex;gap:16px;margin-left:auto;flex-wrap:wrap}header.site nav a{text-decoration:none;color:var(--muted)}header.site nav a:hover{color:var(--accent)}
+main{max-width:800px;margin:0 auto;padding:28px 16px 80px}
+h1{font-size:2em;line-height:1.2}h2{margin-top:2em;padding-top:.6em;border-top:1px solid var(--line)}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background:var(--soft);padding:.1em .35em;border-radius:4px}
+pre{background:var(--surface);border:1px solid var(--line);padding:12px;border-radius:8px;overflow:auto}pre code{background:none;padding:0}
+table{border-collapse:collapse;width:100%;font-size:.92em}th,td{border:1px solid var(--line);padding:7px 10px;text-align:left;vertical-align:top}th{background:var(--soft)}
+.table-wrap{overflow-x:auto}blockquote{margin:1em 0;padding:.2em 1em;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 8px 8px 0}
+img{max-width:100%;height:auto;border-radius:10px}figure{margin:1.2em 0}figcaption{font-size:.85em;color:var(--muted)}
+footer{max-width:800px;margin:0 auto;padding:0 16px 48px;color:var(--muted);font-size:.9em}
+
+.hero{text-align:center;padding:24px 0 8px}.hero h1{font-size:2.4em;margin:.2em 0}.hero p{color:var(--muted);font-size:1.1em;max-width:34em;margin:0 auto}
+.btn{display:inline-block;margin:22px 8px 6px;padding:12px 22px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn.alt{background:transparent;color:var(--accent);border:1px solid var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:18px 0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px}.card h3{margin:.1em 0 .3em;font-size:1.02em}.card p{margin:0;color:var(--muted);font-size:.94em}
+details{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}summary{cursor:pointer;font-weight:600}
+</style></head><body><header class="site"><a class="brand" href="index.html"><img src="img/icon48.png" alt="" width="28" height="28">Pinnook</a>
+<nav><a href="help.html">Help</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://github.com/YOUR_GITHUB_USER/pinnook">GitHub</a></nav></header><main>
+<section class="hero">
+<img src="img/icon128.png" alt="" width="84" height="84">
+<h1>Notes beside any web page. Private by design.</h1>
+<p>Write Markdown notes, add tags and group pages into projects, right in Chrome's side panel. Everything stays on your device.</p>
+<a class="btn" href="https://chromewebstore.google.com/search/Pinnook">Add to Chrome</a><a class="btn alt" href="help.html">Read the help</a>
+</section>
+<figure><img src="img/01-notes-beside-any-page.png" alt="Pinnook side panel next to an article, showing a Markdown note with tags and a project"><figcaption>Screenshots use fictional demo content.</figcaption></figure>
+<h2>What you get</h2>
+<div class="grid">
+<div class="card"><h3>Side-panel notes</h3><p>Markdown with autosave, tasks and quotes. Select text on a page and add it to your note from the right-click menu.</p></div>
+<div class="card"><h3>Projects &amp; tags</h3><p>Group pages by project and domain. Pinnook suggests the project you are working on.</p></div>
+<div class="card"><h3>Fast library search</h3><p>Search titles, notes, tags and URLs instantly, all on your device.</p></div>
+<div class="card"><h3>Yours to keep</h3><p>Export everything as JSON or Markdown. Import and merge any time. No account.</p></div>
+</div>
+<h2>Privacy, plainly</h2>
+<div class="table-wrap"><table><tr><th>Question</th><th>Answer</th></tr>
+<tr><td>Where are my notes stored?</td><td>In Chrome's local extension storage on your device.</td></tr>
+<tr><td>Does the free version use the network?</td><td>No. It contains no network code and its security policy blocks outside connections.</td></tr>
+<tr><td>Does Pinnook read pages I don't save?</td><td>No. Only the title and address of pages you choose to save are stored.</td></tr>
+<tr><td>Analytics, ads, accounts?</td><td>None.</td></tr></table></div>
+<figure><img src="img/architecture.png" alt="Diagram showing data staying in the browser, with optional encrypted backup to the user's own cloud"></figure>
+<p><a href="privacy.html">Read the full privacy policy</a></p>
+<h2>Optional Premium (coming in v1.1)</h2>
+<p>End-to-end-encrypted backup and sync through <em>your own</em> Google Drive or Dropbox. Encrypted on your device with a passphrase only you know. Free features stay free.</p>
+<h2>FAQ</h2>
+<details><summary>Does it work in Incognito?</summary><p>No. Pinnook deliberately opts out of Incognito so private browsing is never recorded.</p></details>
+<details><summary>Can the developer read my notes?</summary><p>No. There are no developer servers. We cannot read, recover or reset your notes.</p></details>
+<details><summary>Can I check what it does?</summary><p>Yes. The permissions are listed on the store page and on chrome://extensions. The free version asks for no website access and contains no network code.</p></details>
+<details><summary>Is it affiliated with Google or Dropbox?</summary><p>No. Pinnook is an independent product. Google Drive and Dropbox are trademarks of their owners.</p></details>
+<p style="text-align:center;margin-top:28px"><a class="btn" href="https://chromewebstore.google.com/search/Pinnook">Add to Chrome</a> <span style="color:var(--muted)">v1.0.0</span></p>
+</main><footer><hr><p>Pinnook 1.0.0 · by PinPixels · Free to use · Independent product, not affiliated with Google or Dropbox.</p></footer></body></html>
