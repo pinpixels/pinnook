@@ -1,0 +1,48 @@
+name: Bug report
+description: Something doesn't work as documented
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping! **Please do not paste private notes, URLs of private pages or personal data.** Use a made-up example if needed.
+  - type: input
+    id: version
+    attributes:
+      label: Pinnook version
+      description: Settings → top of the page, or chrome://extensions
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 130 on Windows 11
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Side panel – This page, Side panel – Library, Context menu / shortcut, Settings, Export / import, Premium backup, Help / docs, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. …\n2. …\n3. …"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected vs what happened
+    validations:
+      required: true
+  - type: textarea
+    id: console
+    attributes:
+      label: Errors (optional)
+      description: chrome://extensions → Pinnook → Errors, or the side panel DevTools console (right-click panel → Inspect).
+      render: text
